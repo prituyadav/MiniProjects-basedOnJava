@@ -1,1 +1,1 @@
-# MiniProjects-basedOnJava-SpringBoot
+# MiniProjects-basedOnJava
