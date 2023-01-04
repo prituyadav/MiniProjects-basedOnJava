@@ -1,0 +1,37 @@
+package com.masai.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.masai.exceptions.UserNotFoundException;
+import com.masai.models.User;
+import com.masai.repos.UserRepo;
+
+@Service
+public class UserServiceImpl implements UserService{
+  @Autowired
+  private UserRepo urepo;
+
+
+public User addUser(User user) {
+	
+	return urepo.save(user);
+}
+
+
+public String deleteUser(Integer id) throws UserNotFoundException {
+	User us=urepo.findById(id);
+	urepo.delete(us);
+	
+	return "user deleted successfully";
+}
+
+
+public User updateUser(Integer id) throws UserNotFoundException {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+ 
+  
+}

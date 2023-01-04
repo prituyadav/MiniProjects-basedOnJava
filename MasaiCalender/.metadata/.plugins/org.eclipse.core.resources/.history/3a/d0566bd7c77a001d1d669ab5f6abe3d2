@@ -1,0 +1,5 @@
+package com.masai.repos;
+
+public interface UserRepo {
+
+}

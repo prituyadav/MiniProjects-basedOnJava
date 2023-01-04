@@ -1,0 +1,12 @@
+package com.masai.controllers;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UserRegistrationAndLoginController {
+      @GetMapping("/")
+      public String chheking() {
+    	  return "Welcome  Here!";
+      }
+}

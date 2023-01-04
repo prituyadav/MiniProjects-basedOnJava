@@ -1,0 +1,18 @@
+package com.masai.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.masai.exceptions.UserNotFoundException;
+import com.masai.repos.EventRepo;
+
+import antlr.debug.Event;
+
+@Service
+public class EventServiceImpl implements EventServise{
+	
+	@Autowired 
+	private EventRepo er;
+
+     
+}

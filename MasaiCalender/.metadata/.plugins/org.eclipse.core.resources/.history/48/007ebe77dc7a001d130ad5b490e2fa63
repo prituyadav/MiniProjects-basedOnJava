@@ -1,0 +1,18 @@
+package com.masai.services;
+
+import com.masai.exceptions.UserNotFoundException;
+import com.masai.models.User;
+
+import antlr.collections.List;
+import antlr.debug.Event;
+
+public interface EventServise {
+	 public Event addevent(Event event)throws UserNotFoundException ;
+	    public String deleteEvent(Integer id) throws UserNotFoundException;
+	    
+	    public Event updateEvent(Integer id, Event ev) throws UserNotFoundException;
+	    
+	    
+	    public List<Event> getAllEvent(Integer id, Event ev) throws UserNotFoundException;
+	    
+}
