@@ -1,5 +1,0 @@
-package com.masai.repos;
-
-public interface EventRepo {
-
-}
