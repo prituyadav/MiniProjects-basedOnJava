@@ -1,0 +1,5 @@
+server.port=8999
+
+spring.security.user.name=pritu
+spring.security.user.password=yadav
+
